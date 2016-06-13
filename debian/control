@@ -1,0 +1,15 @@
+Source: solydx-system-adjustments
+Section: admin
+Priority: optional
+Maintainer: Arjen Balfoort <arjenbalfoort@solydxk.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+
+Package: solydx-system-adjustments
+Architecture: all
+Depends: evolvere-icon-theme-additional, evolvere-icon-theme-flat-vivid-sunken, solydxk-mozilla-evolvere-icon-theme, gtk2-engines-murrine, gtk2-engines-pixbuf, oxygencursors
+Recommends: plymouth, lightdm, lightdm-gtk-greeter
+Conflicts: solydk-system-adjustments, plymouth-themes-solydx, solydx-artwork, solydx-grub2-theme, solydx-lightdm-adjustments, plymouth-themes-solydxbe, solydxbe-artwork, solydxbe-grub2-theme, solydxbe-lightdm-adjustments, solydxbe-system-adjustments
+Replaces: plymouth-themes-solydx, solydx-artwork, solydx-grub2-theme, solydx-lightdm-adjustments, plymouth-themes-solydxbe, solydxbe-artwork, solydxbe-grub2-theme, solydxbe-lightdm-adjustments, solydxbe-system-adjustments
+Description: Adjustments specific to SolydX.
+ This includes configuration and graphical changes.

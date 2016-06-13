@@ -1,0 +1,49 @@
+#!/bin/bash
+
+dialog --yesno 'This will overwrite some of your theme related configuration files.\n\nContinue?' 10 60
+
+if [ $? -eq 0 ]; then
+  if [ ! -d $HOME/.config/xfce4/xfconf/xfce-perchannel-xml/ ]; then
+    mkdir -p $HOME/.config/xfce4/xfconf/xfce-perchannel-xml/
+  fi
+  cp -vf /etc/skel/.config/Trolltech.conf $HOME/.config/
+  cp -rvf /etc/skel/.config/gtk-3.0 $HOME/.config/
+  cp -vf /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml $HOME/.config/xfce4/xfconf/xfce-perchannel-xml/
+  cp -vf /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml $HOME/.config/xfce4/xfconf/xfce-perchannel-xml/
+  
+  PROFILES=$HOME/.thunderbird/profiles.ini
+  CHROME='/etc/skel/.thunderbird/pjzwmea6.default/chrome'
+  if [ -f $PROFILES ] && [ -d $CHROME ]; then
+    PROFILEPATHS=$(cat $PROFILES | grep Path | cut -d'=' -f 2)
+    for PROFILEPATH in $PROFILEPATHS; do
+      if [ ${PROFILEPATH:0:1} != '/' ]; then
+        PROFILEPATH="$HOME/.thunderbird/$PROFILEPATH"
+      fi
+      cp -rvf "$CHROME" "$PROFILEPATH/"
+    done
+  fi
+  
+  PROFILES=$HOME/.mozilla/firefox/profiles.ini
+  CHROME='/etc/skel/.mozilla/firefox/mwad0hks.default/chrome'
+  if [ -f $PROFILES ] && [ -d $CHROME ]; then
+    PROFILEPATHS=$(cat $PROFILES | grep Path | cut -d'=' -f 2)
+    for PROFILEPATH in $PROFILEPATHS; do
+      if [ ${PROFILEPATH:0:1} != '/' ]; then
+        PROFILEPATH="$HOME/.mozilla/firefox/$PROFILEPATH"
+      fi
+      cp -rvf "$CHROME" "$PROFILEPATH/"
+    done
+  fi
+  
+  if [ $UID -eq 0 ]; then
+    sed -i -e 's/gtk-icon-theme-name=.*/gtk-icon-theme-name=evolvere-black-folders-vivid/' $HOME/.config/gtk-3.0/settings.ini
+    sed -i -e 's/gtk-fallback-icon-theme=.*/gtk-fallback-icon-theme=evolvere-black-folders-vivid-dark-fallback/' $HOME/.config/gtk-3.0/settings.ini
+    sed -i -e 's/IconThemeName.*/IconThemeName" type="string" value="evolvere-black-folders-vivid"\/>/' $HOME/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+    dialog --msgbox 'Finished.' 10 35
+  else
+    dialog --yesno 'Do you want to logout now?' 10 35
+    if [ $? -eq 0 ]; then
+      xfce4-session-logout --logout
+    fi
+  fi
+fi

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+for I in firefox icecat iceweasel mozilla-browser; do
+	sed -i 's/^\(X-XFCE-Commands=\).*$/\1%B;/g;s/^\(X-XFCE-CommandsWithParameter=\).*$/\1%B "%s";/g' /usr/share/xfce4/helpers/$I.desktop
+done

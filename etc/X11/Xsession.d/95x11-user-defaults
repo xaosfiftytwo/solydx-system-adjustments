@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Create default bookmarks for Thunar
+if [ ! -f ~/.gtk-bookmarks ]; then
+    echo "file://$HOME/Documents" > ~/.gtk-bookmarks
+    echo "file://$HOME/Downloads" >> ~/.gtk-bookmarks
+    echo "file://$HOME/Music" >> ~/.gtk-bookmarks
+    echo "file://$HOME/Pictures" >> ~/.gtk-bookmarks
+    echo "file://$HOME/Videos" >> ~/.gtk-bookmarks
+fi 
+
+# Alacarte needs the XDG_MENU_PREFIX variable set
+export XDG_MENU_PREFIX=xfce-

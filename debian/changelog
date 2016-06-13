@@ -1,0 +1,280 @@
+solydx-system-adjustments (2.6.0) solydxk; urgency=low
+
+  * Using firefox-esr.desktop in start menu favorites
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 11 Jun 2016 12:11:00 +0200
+
+solydx-system-adjustments (2.5.9) solydxk; urgency=low
+
+  * Updated mimeapps.list
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 02 Jun 2016 11:09:52 +0200
+
+solydx-system-adjustments (2.5.8) solydxk; urgency=low
+
+  * Adapted helpers.rc: Thunar with capital T
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 26 Apr 2016 16:18:33 +0200
+
+solydx-system-adjustments (2.5.7) solydxk; urgency=low
+
+  * Updated /etc/skel/.config/xfce4/helpers.rc
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 29 Mar 2016 13:20:14 +0200
+
+solydx-system-adjustments (2.5.6) solydxk; urgency=low
+
+  * Removed user gconf configuration. Now global. 
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 21 Mar 2016 10:43:18 +0100
+
+solydx-system-adjustments (2.5.5) solydxk; urgency=low
+
+  * Added /etc/skel/.gconf/apps/gksu/%gconf.xml
+  * Removed trigger on solydxk-system service
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 19 Mar 2016 08:24:14 +0100
+
+solydx-system-adjustments (2.5.4) solydxk; urgency=low
+
+  * Do not show default icons on desktop
+  * Changed GTK hash Thunar service
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 22 Feb 2016 15:00:00 +0100
+
+solydx-system-adjustments (2.5.2) solydxk; urgency=low
+
+  * Added new default flat design
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 19 Jan 2016 11:00:00 +0100
+
+solydx-system-adjustments (2.2.1) solydxk; urgency=low
+
+  * Add battery monitor to panel
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 02 Jan 2016 18:00:00 +0100
+
+solydx-system-adjustments (2.2.0) solydxk; urgency=low
+
+  * Remove dependency Evolvere black folders theme
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 12 Dec 2015 15:00:00 +0100
+
+solydx-system-adjustments (2.1.9) solydxk; urgency=low
+
+  * Cheanged default folder icon to evolvere-flat-vivid-sunken
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 02 Dec 2015 09:00:00 +0100
+
+solydx-system-adjustments (2.1.7) solydxk; urgency=low
+
+  * Added female user picture
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 07 Oct 2015 12:00:00 +0100
+
+solydx-system-adjustments (2.1.5) solydxk; urgency=low
+
+  * Added fancy progressbar with ANSI 256 color codes for terminal
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 19 Aug 2015 17:00:00 +0100
+
+solydx-system-adjustments (2.1.4) solydxk; urgency=low
+
+  * Changed mimeapps.list header to [Default Applications]
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 02 Jun 2015 19:30:00 +0100
+
+solydx-system-adjustments (2.1.2) solydxk; urgency=low
+
+  * Resolved issue inserting duplicate keys in LightDM configuration
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 17 May 2015 14:00:00 +0100
+
+solydx-system-adjustments (2.1.1) solydxk; urgency=low
+
+  * Resolved bug not moving default Xfce background
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 16 May 2015 08:30:00 +0100
+
+solydx-system-adjustments (2.1.0) solydxk; urgency=low
+
+  * Changed LightDM configuration for Debian testing
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 15 May 2015 11:00:00 +0100
+
+solydx-system-adjustments (2.0.9) solydxk; urgency=low
+
+  * Autostart clipman
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 04 May 2015 15:00:00 +0100
+
+solydx-system-adjustments (2.0.8) solydxk; urgency=low
+
+  * Save session on exit set to false by default
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 18 Mar 2015 09:00:00 +0100
+
+solydx-system-adjustments (2.0.7) solydxk; urgency=low
+
+  * Do not update-grub for armhf
+  * Added dependencies gtk2-engines-murrine, gtk2-engines-pixbuf, oxygencursors
+  * Added xfce4-clipman-plugin to panel
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 13 Mar 2015 10:00:00 +0100
+
+solydx-system-adjustments (2.0.6) solydxk; urgency=low
+
+  * Moved python-apt templates to solydxk-system
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 05 Mar 2015 11:00:00 +0100
+
+solydx-system-adjustments (2.0.5) solydxk; urgency=low
+
+  * Fix for Firefox opening URLs with xdg-open/exo-open
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 01 Mar 2015 12:00:00 +0100
+
+solydx-system-adjustments (2.0.4) solydxk; urgency=low
+
+  * Changed evolvere dependency
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 18 Feb 2015 19:00:00 +0100
+
+solydx-system-adjustments (2.0.3) solydxk; urgency=low
+
+  * greybird-solydx theme updated
+  * Cleanup
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 09 Feb 2015 12:00:00 +0100
+
+solydx-system-adjustments (2.0.0) solydxk; urgency=low
+
+  * Merged with: plymouth-themes-solydx, solydx-artwork, solydx-grub2-theme, solydx-lightdm-adjustments
+  * Changed to Graybird instead of Oxygen theme
+  * Changed to Evolvere icon theme
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 14 Sep 2014 17:00:00 +0100
+
+solydx-system-adjustments (1.3.3) solydxk; urgency=low
+
+  * Fixed switch users in whisker menu
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 28 Aug 2014 09:00:00 +0100
+
+solydx-system-adjustments (1.3.2) solydxk; urgency=low
+
+  * Removed skel files for chromium
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 04 Aug 2014 21:00:00 +0100
+
+solydx-system-adjustments (1.3.0) solydxk; urgency=low
+
+  * Changed Whisker menu favorites list
+  * Added password-less printer configuration and mounts
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 07 Jul 2014 13:00:00 +0100
+
+solydx-system-adjustments (1.2.9) solydxk; urgency=low
+
+  * Improved font rendering settings
+  * xhost security issue resolved
+  * Diverted non-solyd wallpapers
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 18 Apr 2014 07:00:00 +0100
+
+solydx-system-adjustments (1.2.6) solydxk; urgency=low
+
+  * Removed Firefox settings
+  * Restart pulseaudio after sleep
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 15 Mar 2014 17:00:00 +0100
+
+solydx-system-adjustments (1.1.9) solydxk; urgency=low
+
+  * Removed Thunderbird settings
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 06 Feb 2014 14:00:00 +0100
+
+solydx-system-adjustments (1.1.8) solydxk; urgency=low
+
+  * Changed clock in tray
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 08 Dec 2013 18:00:00 +0100
+
+solydx-system-adjustments (1.1.7) solydxk; urgency=low
+
+  * Adapted Firefox configuration
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 09 Nov 2013 21:00:00 +0100
+
+solydx-system-adjustments (1.1.6) solydxk; urgency=low
+
+  * Thunar configuration for sambashare
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 22 Oct 2013 18:00:00 +0100
+
+solydx-system-adjustments (1.1.5) solydxk; urgency=low
+
+  * Set spell checker on by default
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 18 Oct 2013 04:00:00 +0100
+
+solydx-system-adjustments (1.1.4) solydxk; urgency=low
+
+  * Removed lsb-release
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 29 Aug 2013 10:00:00 +0100
+
+solydx-system-adjustments (1.0.9) solydxk; urgency=low
+
+  * Whisker menu is now the default menu
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 05 Aug 2013 12:30:00 +0100
+
+solydx-system-adjustments (1.0.8) solydxk; urgency=low
+
+  * Changed lsb-release
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 26 Mar 2013 14:30:00 +0100
+
+solydx-system-adjustments (1.0.7) solydxk; urgency=low
+
+  * Disable Thunderbird updates
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 22 Mar 2013 10:30:00 +0100
+
+solydx-system-adjustments (1.0.5) solydxk; urgency=low
+
+  * Improved postinst
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 13 Mar 2013 14:00:00 +0100
+
+solydx-system-adjustments (1.0.4) solydxk; urgency=low
+
+  * Corrected obex command for thunar
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 10 Mar 2013 20:00:00 +0100
+
+solydx-system-adjustments (1.0.3) solydxk; urgency=low
+
+  * Menu order changed
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 02 Mar 2013 10:00:00 +0100
+
+solydx-system-adjustments (1.0.2) solydxk; urgency=low
+
+  * Minor bugfix not being detected by updatemanager version 1.0.2
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 26 Feb 2013 19:00:00 +0100
+ 
+solydx-system-adjustments (1.0.1) solydxk; urgency=low
+
+  * Minor bugs resolved version 1.0.1
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 23 Feb 2013 13:00:00 +0100
+
+solydx-system-adjustments (1.0.0) solydxk; urgency=low
+
+  * Initial version 1.0.0
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 23 Jan 2013 08:30:00 +0100
